@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: linear-gradient(100deg, #05002a, #200505);
+    cursor: url("Sources/f1cursor.png"), auto;
+}
+a:hover{
+    cursor: url("Sources/icons8-finish-flag-100.png"), pointer;
+}
+
+header{
+    background-color: rgb(8, 2, 23);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 100000000;
+}
+.logo{
+    margin-top: -17px;
+}
+.logo img{
+    height: 80px;
+    width: auto;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    padding-left: 28rem;
+    align-items: center;
+}
+header ul li{
+    padding: 0 20px;
+    position: relative;
+    font-size: 20px;
+}
+header ul li a{
+    padding: 5px 0;
+    position: relative;
+    cursor: pointer;
+    display: inline-block; 
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 1.5px;
+    width: 0%;
+    background-color: red;
+    transition: width 0.3s ease;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+header ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.quote{
+    display: flex;
+    align-items: center;
+    padding-left: 320px;
+    color: rgb(80, 47, 188);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hf1{
+    padding-top: 150px;
+    padding-left: 50px;
+    height: auto;
+    width: 400%;
+    display: flex;
+}
+.img-wrapper {
+    border: 3px solid red;
+    border-radius: 20px;
+    width: fit-content;
+    overflow: hidden; 
+}
+
+.img-wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    transition: opacity 0.3s ease-out;
+}
+.aboutf1{
+    padding-left: 120px;
+    padding-top: 130px;
+    color: white;
+}
+.aboutf1 h1{
+    padding-bottom: 30px;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px px 4px rgb(255, 0, 0);
+}
+.aboutf1 p{
+    width: 95%;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.drivers{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.groupphoto{
+    display: flex;
+    justify-content: space-between;
+}
+.gppic{
+    width: fit-content;
+    overflow: hidden;
+    padding-top: 130px;
+    padding-right: 150px;
+}
+.gppic img{
+    height: 450px;
+    width: auto;
+    border-radius: 20px;
+    border: 3px solid red
+}
+.groupphoto h1{
+   color: rgb(255, 0, 0);
+   text-shadow: 1px px 4px rgb(255, 0, 0);
+   font-size: 80px;
+   max-width: 10%;
+   padding-top: 180px;
+   padding-bottom: 180px;
+   padding-left: 100px;
+   text-decoration: overline;
+}
+.ferrari {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    padding-top: 80px;
+    padding-right: 150px;
+    padding-bottom: 40px;
+}
+
+.team-car {
+    width: 200px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.driver-img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: url("Sources/icons8-finish-flag-100.png"), pointer;
+}
+.driver-card {
+    position: relative;
+}
+.driver-info {
+    position: absolute;
+    top: 50%;
+    left: 110%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 15px;
+    width: 200px;
+    border-radius: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    box-shadow: 0 0 10px red;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+}
+.driver-card:hover .driver-info {
+    opacity: 1;
+    transform: translateY(-70%) scale(1.05);
+}
+.driver-info .iconic {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.loader{
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99999999999;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.7s ease;
+}
+.fade{
+    opacity: 0;
+    pointer-events: none;
+}
+.splash{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.red-line{
+    position: absolute;
+    bottom: 100px;
+    width:0%;
+    height: 5px;
+    background-color: red;
+    margin-left: 73px;
+    animation: full 4s ease 0.4s;
+}
+
+@keyframes full{
+    from{width: 0%;}
+    to {width: 90%;}
+}
+.carload{
+    position: absolute;
+    bottom: 95px;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    left: 0;
+}
+.loadcar{
+    width: 80px;
+    position: absolute;
+    left: -100px;
+    animation: carrun 4s ease 0.4s;
+}
+@keyframes carrun{
+    from{left: 0%;}
+    to {left: 90%;}
+}
+.carsh1{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+.cars h1{
+    font-size: 600%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: overline;
+    color: red;
+}
