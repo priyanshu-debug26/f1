@@ -268,3 +268,45 @@ header ul li a:hover{
     text-decoration: overline;
     color: red;
 }
+
+.team {
+  height: 100vh;
+  position: relative;
+  padding: 50px;
+  /* This creates a SEPARATE timeline for every team section */
+  view-timeline-name: --teamTimeline;
+  view-timeline-axis: block;
+}
+
+/* Car animation */
+.car {
+  width: 600px;
+  position: absolute;
+  left: -300px;
+  top: 30%;
+  animation: carMove 0.8s linear both;
+  animation-timeline: --teamTimeline;
+  animation-range: entry 0% cover 50%;
+}
+
+/* Text animation */
+.info {
+  position: absolute;
+  bottom: -300px;
+  left: 50px;
+  width: 300px;
+  animation: textMove s linear both;
+  animation-timeline: --teamTimeline;
+  animation-range: entry 0% cover 50%;
+}
+
+/* Keyframes */
+@keyframes carMove {
+  from { transform: translateX(0); opacity: 0; }
+  to   { transform: translateX(770px); opacity: 1; }
+}
+
+@keyframes textMove {
+  from { transform: translateY(0); opacity: 0; }
+  to   { transform: translateY(-150px); opacity: 1; }
+}
