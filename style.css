@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body{
-    background: linear-gradient(100deg, #05002a, #200505);
+    background: linear-gradient(90deg, #05002a, #200505);
     cursor: url("Sources/f1cursor.png"), auto;
 }
 a:hover{
@@ -268,6 +268,20 @@ header ul li a:hover{
     text-decoration: overline;
     color: red;
 }
+.teams-nav{
+    padding-bottom: 200px;
+}
+.teams-nav h1{
+   color: rgb(255, 0, 0);
+   text-shadow: 1px px 4px rgb(255, 0, 0);
+   font-size: 80px;
+   max-width: 10%;
+   padding-top: 180px;
+   padding-bottom: 80px;
+   padding-left: 100px;
+   text-decoration: underline;
+   font-style: italic;
+}
 
 .team {
   height: 100vh;
@@ -276,6 +290,7 @@ header ul li a:hover{
   /* This creates a SEPARATE timeline for every team section */
   view-timeline-name: --teamTimeline;
   view-timeline-axis: block;
+  padding-bottom: 200px;
 }
 
 /* Car animation */
@@ -292,12 +307,17 @@ header ul li a:hover{
 /* Text animation */
 .info {
   position: absolute;
-  bottom: -300px;
+  bottom: -120px;
   left: 50px;
-  width: 300px;
-  animation: textMove s linear both;
+  width: 95%;
+  animation: textMove 2s linear both;
   animation-timeline: --teamTimeline;
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 55%;
+  color: white;
+  font-size: x-large;
+}
+.info h2{
+    padding-bottom: 30px;
 }
 
 /* Keyframes */
@@ -308,5 +328,5 @@ header ul li a:hover{
 
 @keyframes textMove {
   from { transform: translateY(0); opacity: 0; }
-  to   { transform: translateY(-150px); opacity: 1; }
+  to   { transform: translateY(-130px); opacity: 1; }
 }
