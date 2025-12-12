@@ -4,7 +4,7 @@ const quotes = [
 
 const quoteElement = document.querySelector(".quote");
 
-function randomQuotes(){
+function randomQuotes() {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     quoteElement.textContent = randomQuote;
 }
@@ -21,7 +21,7 @@ let heroIndex = 0;
 
 const imgElement = document.getElementById("f1img");
 
-function randomImage(){
+function randomImage() {
     imgElement.style.opacity = 0;
 
     setTimeout(() => {
@@ -38,3 +38,21 @@ window.addEventListener("load", () => {
         document.querySelector(".loader").classList.add("fade");
     }, 4000)
 })
+
+document.querySelectorAll(".legends").forEach(container => {
+    
+    const section = container.querySelector(".shumacher");
+    const slider = container.querySelector(".sidescroll");
+
+    document.addEventListener("scroll", () => {
+        const rect = container.getBoundingClientRect();
+        const total = container.offsetHeight - window.innerHeight;
+
+        let progress = -rect.top / total;
+        progress = Math.min(Math.max(progress, 0), 1);
+
+        const maxMove = slider.scrollWidth - section.clientWidth;
+
+        slider.style.transform = `translateX(${-progress * maxMove}px)`;
+    });
+});
