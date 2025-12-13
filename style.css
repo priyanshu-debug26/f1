@@ -6,10 +6,6 @@
 }
 body{
     background: linear-gradient(90deg, #05002a, #200505);
-    cursor: url("Sources/f1cursor.png"), auto;
-}
-a:hover{
-    cursor: url("Sources/icons8-finish-flag-100.png"), pointer;
 }
 
 header{
@@ -168,7 +164,6 @@ header ul li a:hover{
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-    cursor: url("Sources/icons8-finish-flag-100.png"), pointer;
 }
 .driver-card {
     position: relative;
@@ -356,4 +351,61 @@ header ul li a:hover{
     position: sticky;
     top: 0%;
     height: 90vh;
+}
+
+.hmen{
+    padding-top: 170px;
+}
+.hmen h1{
+    color: red;
+    text-align: center;
+}
+.hmen-grid{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.hmen-card{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+}
+
+.footer{
+    position: relative;
+    padding-top: 60px;
+}
+.lastb{
+    position: absolute;
+    right: 0%;
+    margin-right: 20px;
+    cursor: pointer;
+    height: 100px;
+    width: 400px;
+    font-size: 25px;
+    border: solid 4px red;
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    
+}
+.lastb a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.lastb:hover{
+    background-color: rgb(230, 230, 230);
+}
+.lastb:hover a{
+    color: black;
+}
+
+html{
+    scroll-behavior: smooth;
 }
