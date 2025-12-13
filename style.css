@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+
+body {
     background: linear-gradient(90deg, #05002a, #200505);
 }
 
-header{
+header {
     background-color: rgb(8, 2, 23);
     height: 50px;
     width: 100%;
@@ -16,34 +17,39 @@ header{
     position: fixed;
     z-index: 100000000;
 }
-.logo{
+
+.logo {
     margin-top: -17px;
 }
-.logo img{
+
+.logo img {
     height: 80px;
     width: auto;
 }
-header ul{
+
+header ul {
     list-style: none;
     display: flex;
     padding-left: 28rem;
     align-items: center;
 }
-header ul li{
+
+header ul li {
     padding: 0 20px;
     position: relative;
     font-size: 20px;
 }
-header ul li a{
+
+header ul li a {
     padding: 5px 0;
     position: relative;
     cursor: pointer;
-    display: inline-block; 
+    display: inline-block;
     color: rgb(255, 0, 0);
     text-decoration: none;
 }
 
-header ul li a::after{
+header ul li a::after {
     content: "";
     position: absolute;
     left: 0px;
@@ -53,14 +59,16 @@ header ul li a::after{
     background-color: red;
     transition: width 0.3s ease;
 }
-header ul li a:hover::after{
+
+header ul li a:hover::after {
     width: 100%;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     color: rgb(255, 255, 255);
 }
 
-.quote{
+.quote {
     display: flex;
     align-items: center;
     padding-left: 320px;
@@ -69,24 +77,25 @@ header ul li a:hover{
     font-weight: 600;
 }
 
-.hero{
+.hero {
     height: auto;
     display: flex;
     align-items: center;
 }
 
-.hf1{
+.hf1 {
     padding-top: 150px;
     padding-left: 50px;
     height: auto;
     width: 400%;
     display: flex;
 }
+
 .img-wrapper {
     border: 3px solid red;
     border-radius: 20px;
     width: fit-content;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .img-wrapper img {
@@ -94,17 +103,20 @@ header ul li a:hover{
     border-radius: 20px;
     transition: opacity 0.3s ease-out;
 }
-.aboutf1{
+
+.aboutf1 {
     padding-left: 120px;
     padding-top: 130px;
     color: white;
 }
-.aboutf1 h1{
+
+.aboutf1 h1 {
     padding-bottom: 30px;
     color: rgb(255, 0, 0);
     text-shadow: 1px px 4px rgb(255, 0, 0);
 }
-.aboutf1 p{
+
+.aboutf1 p {
     width: 95%;
     font-size: 20px;
     font-style: italic;
@@ -112,37 +124,42 @@ header ul li a:hover{
     color: #ffffff;
 }
 
-.drivers{
+.drivers {
     padding-top: 150px;
     padding-left: 50px;
 }
-.groupphoto{
+
+.groupphoto {
     display: flex;
     justify-content: space-between;
 }
-.gppic{
+
+.gppic {
     width: fit-content;
     overflow: hidden;
     padding-top: 130px;
     padding-right: 150px;
 }
-.gppic img{
+
+.gppic img {
     height: 450px;
     width: auto;
     border-radius: 20px;
     border: 3px solid red
 }
-.groupphoto h1{
-   color: rgb(255, 0, 0);
-   text-shadow: 1px px 4px rgb(255, 0, 0);
-   font-size: 80px;
-   max-width: 10%;
-   padding-top: 180px;
-   padding-bottom: 180px;
-   padding-left: 100px;
-   text-decoration: underline;
-   font-style: italic;
+
+.groupphoto h1 {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px px 4px rgb(255, 0, 0);
+    font-size: 80px;
+    max-width: 10%;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    padding-left: 100px;
+    text-decoration: underline;
+    font-style: italic;
 }
+
 .ferrari {
     display: flex;
     justify-content: center;
@@ -165,9 +182,11 @@ header ul li a:hover{
     object-fit: cover;
     border-radius: 10px;
 }
+
 .driver-card {
     position: relative;
 }
+
 .driver-info {
     position: absolute;
     top: 50%;
@@ -185,17 +204,19 @@ header ul li a:hover{
     backdrop-filter: blur(5px);
     z-index: 10;
 }
+
 .driver-card:hover .driver-info {
     opacity: 1;
     transform: translateY(-70%) scale(1.05);
 }
+
 .driver-info .iconic {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
-.loader{
+.loader {
     top: 0;
     left: 0;
     position: fixed;
@@ -206,19 +227,22 @@ header ul li a:hover{
     opacity: 1;
     transition: opacity 0.7s ease;
 }
-.fade{
+
+.fade {
     opacity: 0;
     pointer-events: none;
 }
-.splash{
+
+.splash {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-.red-line{
+
+.red-line {
     position: absolute;
     bottom: 100px;
-    width:0%;
+    width: 0%;
     height: 5px;
     background-color: red;
     margin-left: 73px;
@@ -226,11 +250,17 @@ header ul li a:hover{
     border-radius: 5px;
 }
 
-@keyframes full{
-    from{width: 0%;}
-    to {width: 90%;}
+@keyframes full {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 90%;
+    }
 }
-.carload{
+
+.carload {
     position: absolute;
     bottom: 95px;
     overflow: hidden;
@@ -238,105 +268,133 @@ header ul li a:hover{
     height: 40px;
     left: 0;
 }
-.loadcar{
+
+.loadcar {
     width: 80px;
     position: absolute;
     left: -100px;
     animation: carrun 4s ease 0.4s;
 }
-@keyframes carrun{
-    from{left: 0%;}
-    to {left: 90%;}
+
+@keyframes carrun {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 90%;
+    }
 }
-.carsh1{
+
+.carsh1 {
     display: flex;
     justify-content: center;
     padding-top: 300px;
     padding-bottom: 300px;
 }
-.cars h1{
+
+.cars h1 {
     font-size: 600%;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-variant: small-caps;
     text-align: center;
     text-decoration: overline;
     color: red;
 }
-.teams-nav{
+
+.teams-nav {
     padding-bottom: 100px;
 }
-.teams-nav h1{
-   color: rgb(255, 0, 0);
-   text-shadow: 1px px 4px rgb(255, 0, 0);
-   font-size: 80px;
-   max-width: 10%;
-   padding-top: 180px;
-   padding-bottom: 80px;
-   padding-left: 100px;
-   text-decoration: underline;
-   font-style: italic;
+
+.teams-nav h1 {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px px 4px rgb(255, 0, 0);
+    font-size: 80px;
+    max-width: 10%;
+    padding-top: 180px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    text-decoration: underline;
+    font-style: italic;
 }
 
 .team {
-  height: 100vh;
-  position: relative;
-  padding: 50px;
-  /* This creates a SEPARATE timeline for every team section */
-  view-timeline-name: --teamTimeline;
-  view-timeline-axis: block;
-  padding-bottom: 200px;
+    height: 100vh;
+    position: relative;
+    padding: 50px;
+    /* This creates a SEPARATE timeline for every team section */
+    view-timeline-name: --teamTimeline;
+    view-timeline-axis: block;
+    padding-bottom: 200px;
 }
 
 /* Car animation */
 .car {
-  width: 600px;
-  position: absolute;
-  left: -300px;
-  top: 30%;
-  animation: carMove 0.8s linear both;
-  animation-timeline: --teamTimeline;
-  animation-range: entry 0% cover 50%;
+    width: 600px;
+    position: absolute;
+    left: -300px;
+    top: 30%;
+    animation: carMove 0.8s linear both;
+    animation-timeline: --teamTimeline;
+    animation-range: entry 0% cover 50%;
 }
 
 /* Text animation */
 .info {
-  position: absolute;
-  bottom: -120px;
-  left: 50px;
-  width: 95%;
-  animation: textMove 2s linear both;
-  animation-timeline: --teamTimeline;
-  animation-range: entry 0% cover 55%;
-  color: white;
-  font-size: x-large;
+    position: absolute;
+    bottom: -120px;
+    left: 50px;
+    width: 95%;
+    animation: textMove 2s linear both;
+    animation-timeline: --teamTimeline;
+    animation-range: entry 0% cover 55%;
+    color: white;
+    font-size: x-large;
 }
-.info h2{
+
+.info h2 {
     padding-bottom: 30px;
 }
 
 /* Keyframes */
 @keyframes carMove {
-  from { transform: translateX(0); opacity: 0; }
-  to   { transform: translateX(770px); opacity: 1; }
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(770px);
+        opacity: 1;
+    }
 }
 
 @keyframes textMove {
-  from { transform: translateY(0); opacity: 0; }
-  to   { transform: translateY(-130px); opacity: 1; }
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(-130px);
+        opacity: 1;
+    }
 }
 
-.legends{
+.legends {
     position: relative;
     height: 500vh;
 }
-.sidescroll img{
+
+.sidescroll img {
     height: auto;
     width: 38%;
     padding: 40px;
     border-radius: 100%;
 }
-.sidescroll{
+
+.sidescroll {
     position: relative;
     top: 0%;
     display: flex;
@@ -345,7 +403,8 @@ header ul li a:hover{
     transition: transform 0.2s linear;
     padding-top: 70px;
 }
-#Ldriver{
+
+#Ldriver {
     width: 100%;
     overflow: hidden;
     position: sticky;
@@ -353,21 +412,24 @@ header ul li a:hover{
     height: 90vh;
 }
 
-.hmen{
+.hmen {
     padding-top: 170px;
 }
-.hmen h1{
+
+.hmen h1 {
     color: red;
     text-align: center;
 }
-.hmen-grid{
+
+.hmen-grid {
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 200px;
     margin-right: 200px;
 }
-.hmen-card{
+
+.hmen-card {
     color: rgb(255, 255, 255);
     padding-top: 20px;
     display: flex;
@@ -375,11 +437,12 @@ header ul li a:hover{
     font-size: 23px;
 }
 
-.footer{
+.footer {
     position: relative;
     padding-top: 60px;
 }
-.lastb{
+
+.lastb {
     position: absolute;
     right: 0%;
     margin-right: 20px;
@@ -391,179 +454,24 @@ header ul li a:hover{
     border-radius: 20px;
     text-align: center;
     background-color: black;
-    
+
 }
-.lastb a{
+
+.lastb a {
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
 }
-.lastb:hover{
+
+.lastb:hover {
     background-color: rgb(230, 230, 230);
 }
-.lastb:hover a{
+
+.lastb:hover a {
     color: black;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-}
-
-@media (max-width: 600px) {
-
-  body {
-    overflow-x: hidden;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  header ul {
-    padding-left: 0;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  header ul li {
-    font-size: 14px;
-    padding: 6px 10px;
-  }
-
-  .quote {
-    display: none;
-  }
-
-  .hero {
-    flex-direction: column;
-  }
-
-  .hf1 {
-    width: 90%;
-    padding: 120px 0 0 0;
-  }
-
-  .aboutf1 {
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .aboutf1 h1 {
-    font-size: 28px;
-  }
-
-  .aboutf1 p {
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .groupphoto {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .groupphoto h1 {
-    font-size: 36px;
-    max-width: 100%;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .gppic {
-    padding: 0;
-  }
-
-  .gppic img {
-    height: auto;
-    width: 90%;
-  }
-
-  .ferrari {
-    flex-direction: column;
-    gap: 40px;
-    padding-right: 0;
-  }
-
-  .team-car {
-    width: 140px;
-  }
-
-  .driver-img {
-    width: 150px;
-  }
-
-  .driver-info {
-    left: 50%;
-    top: 110%;
-    transform: translateX(-50%);
-    width: 180px;
-    font-size: 14px;
-  }
-
-  .team {
-    height: auto;
-    padding-bottom: 120px;
-  }
-
-  .car {
-    position: relative;
-    width: 90%;
-    left: 0;
-    animation: none;
-  }
-
-  .info {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    animation: none;
-    font-size: 16px;
-    line-height: 26px;
-  }
-
-  .legends {
-    height: auto;
-  }
-
-  #Ldriver {
-    position: relative;
-    height: auto;
-  }
-
-  .sidescroll {
-    flex-wrap: wrap;
-    justify-content: center;
-    transform: none !important;
-  }
-
-  .sidescroll img {
-    width: 80%;
-    border-radius: 20px;
-  }
-
-  .hmen-grid {
-    grid-template-columns: 1fr;
-    margin: 20px;
-  }
-
-  .hmen-card {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .lastb {
-    width: 90%;
-    right: 5%;
-    height: auto;
-    padding: 20px;
-    font-size: 18px;
-  }
 }
